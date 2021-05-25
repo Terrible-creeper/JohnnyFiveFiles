@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Bootstrap core CSS -->
+	<link href="./css/bootstrap.min.css" rel="stylesheet">
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="./js/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+	<div class="container ">
+		<div class="row justify-content-center align-items-center">
+			<div class="btn-group-vertical">
+				<div class="btn-group clearfix" role="group" >
+					<button type="button" class="btn btn-primary" style="height:70px" id="Up-Left">Up-Left</button>
+					&nbsp&nbsp&nbsp
+					<button type="button" class="btn btn-primary" style="height:70px" id="Up">Up</button>
+					&nbsp&nbsp&nbsp
+					<button type="button" class="btn btn-primary" style="height:70px" id="Up-Right">Up-Right</button>
+				</div>
+				<br>
+				<div class="btn-group clearfix" role="group" >
+					<button type="button" class="btn btn-primary" style="height:70px" id="Left">Left</button>
+					&nbsp&nbsp&nbsp
+					<button type="button" class="btn btn-danger" style="height:70px" id="Stop">Stop</button>
+					&nbsp&nbsp&nbsp
+					<button type="button" class="btn btn-primary" style="height:70px" id="Right">Right</button>
+				</div>
+				<br>
+				<div class="btn-group clearfix" role="group" >
+					<button type="button" class="btn btn-primary" style="height:70px" id="Down-Left">Down-Left</button>
+					&nbsp&nbsp&nbsp
+					<button type="button" class="btn btn-primary" style="height:70px" id="Down">Down</button>
+					&nbsp&nbsp&nbsp
+					<button type="button" class="btn btn-primary" style="height:70px" id="Down-Right">Down-Right</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<table style="width: 100%;" cellspacing="2" cellpadding="2">
+		<td align=center>
+			<canvas id="img" width="320" height="240" style="border:1px solid #000000;" >
+				Your browser does not support the HTML5 canvas tag.
+			</canvas>
+		</td>
+	</table>
+	<script src="js/index.js"></script>
+  </body>
+</html>
